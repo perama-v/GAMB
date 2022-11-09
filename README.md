@@ -41,9 +41,9 @@ The contract MUST provide a write method:
 publishHash(string TOPIC, string HASH)
 ```
 Where:
-- `TOPIC` an identifier unique to a data type, such as a partcicular database or index (such as
+- `TOPIC` string identifier unique to a data type, such as a partcicular database or index (such as
 "my-special-index").
-- `HASH` an Interplanetary File System (IPFS) CID representing the identifier for a manifest file.
+- `HASH` a string representing the Interplanetary File System (IPFS) CID of a manifest file.
 Any CID version MAY be used.
 
 The `publishHash` method MUST emit an event with the following signature:
@@ -74,6 +74,8 @@ version of the data structure.
 The Manifest MUST have a "schemas" field, whose value is RECOMMENDED to either represent the CID
 of the schema
 and/or protocols that define the data and its preparation and use.
+
+It is RECOMMENDED that the Manifest has a "publish_as_topic" field, whose value is `TOPIC`.
 
 It is RECOMMENDED that the manifest contains a list of CIDs, each representing the smallest
 distributable unit of the data.
