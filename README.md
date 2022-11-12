@@ -11,6 +11,10 @@ created: <date created on, in ISO 8601 (yyyy-mm-dd) format>
 requires (*optional): <EIP number(s)>
 ---
 
+> Note: This is formulated in the style of an EIP as a thought exercise for now.
+It is not clear that the concept is suited for an EIP. If that changes, I'll update this
+comment.
+
 ## Abstract
 
 A smart contract for publishing a content identifier (CID) for a manifest file for a under a topic
